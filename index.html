@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" data-theme="night" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TALA Highland Glamping — Sleep beneath a thousand stars</title>
+<meta name="description" content="TALA Highland Glamping — a fictional glamping resort in the Philippine highlands. Portfolio sample by Khael Mendoza.">
+<meta name="theme-color" content="#070b24">
+<meta property="og:title" content="TALA Highland Glamping">
+<meta property="og:description" content="Bell tents, an A-frame cabin and a stargazing dome above the clouds. Fictional brand, portfolio sample.">
+<meta property="og:image" content="assets/img/hero-night.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1540'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23f0b15a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-night.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="TALA home">
+    <svg class="brand__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.2 7.3 7.3 2.2-7.3 2.2L12 20.5l-2.2-7.3L2.5 11l7.3-2.2z"/></svg>
+    <span class="brand__word">TALA</span>
+    <span class="brand__sub">Highland Glamping</span>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#stays">Stays</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#estimate">Estimate</a>
+    <a href="#faq">FAQ</a>
+    <a href="#location">Location</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to day mode">
+      <span class="toggle__track">
+        <span class="toggle__label toggle__label--night">Night</span>
+        <span class="toggle__label toggle__label--day">Day</span>
+        <span class="toggle__thumb" aria-hidden="true">
+          <svg class="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><g stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+        </span>
+      </span>
+    </button>
+    <a class="btn btn--sm" href="#book">Book</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-label="Welcome">
+  <div class="hero__media" aria-hidden="true">
+    <div class="hero__layer hero__layer--night is-active" style="background-image:url(assets/img/hero-night.jpg)">
+      <video class="hero__video" data-src="assets/video/hero-night.mp4" poster="assets/img/hero-night.jpg" muted loop autoplay playsinline preload="none"></video>
+    </div>
+    <div class="hero__layer hero__layer--day" style="background-image:url(assets/img/hero-sunrise.jpg)">
+      <video class="hero__video" data-src="assets/video/hero-sunrise.mp4" poster="assets/img/hero-sunrise.jpg" muted loop autoplay playsinline preload="none"></video>
+    </div>
+    <div class="hero__shade"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow reveal"><span class="eyebrow__line"></span><span class="t-night">1,600 m above sea level · Cordillera highlands</span><span class="t-day">Wake up above a sea of clouds</span></p>
+    <h1 class="hero__title reveal">
+      <span class="t-night">Sleep beneath a <em>thousand</em> stars.</span>
+      <span class="t-day">Wake up <em>above</em> the clouds.</span>
+    </h1>
+    <p class="hero__lede reveal">Three canvas-and-timber stays on a quiet pine ridge. Lantern-lit nights, cold mountain air, and a sunrise you'll get up early for.</p>
+    <div class="hero__cta reveal">
+      <a class="btn" href="#stays">Explore the stays</a>
+      <a class="btn btn--ghost" href="#estimate">Estimate your stay</a>
+    </div>
+  </div>
+
+  <div class="hero__meta glass reveal" role="list">
+    <div role="listitem"><span class="hero__metaK">Night temp</span><span class="hero__metaV">12–16°C</span></div>
+    <div role="listitem"><span class="hero__metaK">Elevation</span><span class="hero__metaV">1,600 m</span></div>
+    <div role="listitem"><span class="hero__metaK">From / night</span><span class="hero__metaV">₱4,800</span></div>
+  </div>
+
+  <button class="hero__pause" id="videoPause" type="button" aria-label="Pause background video" hidden>
+    <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z"/></svg>
+  </button>
+  <a class="hero__scroll" href="#intro" aria-label="Scroll to introduction"><span></span></a>
+</section>
+
+<main id="main">
+
+<!-- ============ INTRO ============ -->
+<section class="intro starfield" id="intro">
+  <canvas class="stars" aria-hidden="true"></canvas>
+  <div class="wrap intro__inner">
+    <p class="eyebrow reveal"><span class="eyebrow__line"></span>Tala <span class="intro__ipa">/ˈta·la/</span> — Filipino for <em>star</em></p>
+    <h2 class="intro__statement reveal">We built TALA for the hour after the lanterns go out, when the valley lights fade, the fog settles below you, and the <em>sky takes over.</em></h2>
+    <div class="intro__facts">
+      <div class="fact reveal"><span class="fact__n">0</span><span class="fact__t">Streetlights on the ridge. Bortle&nbsp;3 skies on clear nights.</span></div>
+      <div class="fact reveal"><span class="fact__n">5</span><span class="fact__t">Stays only, so the trail and the fire circle never feel crowded.</span></div>
+      <div class="fact reveal"><span class="fact__n">05:42</span><span class="fact__t">Average sunrise. We'll knock with coffee if you ask.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAYS ============ -->
+<section class="stays section" id="stays">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal"><span class="eyebrow__line"></span>The stays</p>
+      <h2 class="section__title reveal">Three ways to <em>sleep outside</em>, without roughing it.</h2>
+      <p class="section__lede reveal">Each comes with real beds, warm linens, a private deck facing the valley, and access to the shared hot-shower cabin.</p>
+    </header>
+
+    <div class="stays__grid">
+      <article class="stay reveal" data-stay="belltent">
+        <div class="stay__img"><img src="assets/img/stay-belltent.jpg" alt="Three lantern-lit canvas bell tents on wooden decks above a misty valley at night" loading="lazy" decoding="async" width="1200" height="675"></div>
+        <div class="stay__body">
+          <div class="stay__top">
+            <h3 class="stay__name">Bell Tent</h3>
+            <p class="stay__price"><span class="stay__amt">₱4,800</span><span class="stay__per">/ night</span></p>
+          </div>
+          <p class="stay__guests"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.6 0 4.4 1.4 5 4"/></svg>2 guests · up to 3</p>
+          <p class="stay__desc">Our classic. A five-metre cotton canvas tent on a raised deck, with a queen bed, lanterns and a front flap that ties open to the stars.</p>
+          <ul class="stay__inc">
+            <li>Queen bed, wool throws, extra blankets</li>
+            <li>Private deck with two chairs</li>
+            <li>Lanterns, power bank station, Wi-Fi at the lodge</li>
+            <li>Welcome tea and native coffee</li>
+          </ul>
+          <button class="btn btn--line stay__btn" type="button" data-pick="belltent">Estimate this stay</button>
+        </div>
+      </article>
+
+      <article class="stay reveal" data-stay="aframe">
+        <div class="stay__img"><img src="assets/img/stay-aframe.jpg" alt="A black A-frame cabin with a glass front and warm lights on a deck overlooking misty pine hills at dusk" loading="lazy" decoding="async" width="1200" height="675"></div>
+        <div class="stay__body">
+          <div class="stay__top">
+            <h3 class="stay__name">A-Frame Cabin</h3>
+            <p class="stay__price"><span class="stay__amt">₱7,500</span><span class="stay__per">/ night</span></p>
+          </div>
+          <p class="stay__guests"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.6 0 4.4 1.4 5 4"/></svg>4 guests · up to 5</p>
+          <p class="stay__desc">Timber walls and a full glass gable facing the ridge. Built for small families and barkada trips that want a solid roof and a private bathroom.</p>
+          <ul class="stay__inc">
+            <li>Queen bed and loft with two singles</li>
+            <li>Private bathroom with hot shower</li>
+            <li>Covered deck and kettle station</li>
+            <li>Parking slot beside the cabin</li>
+          </ul>
+          <button class="btn btn--line stay__btn" type="button" data-pick="aframe">Estimate this stay</button>
+        </div>
+      </article>
+
+      <article class="stay reveal" data-stay="dome">
+        <div class="stay__img"><img src="assets/img/stay-dome.jpg" alt="A transparent geodesic dome with a lantern-lit bed under the Milky Way, overlooking valley lights" loading="lazy" decoding="async" width="1200" height="675"></div>
+        <div class="stay__body">
+          <div class="stay__top">
+            <h3 class="stay__name">Stargazing Dome</h3>
+            <p class="stay__price"><span class="stay__amt">₱9,200</span><span class="stay__per">/ night</span></p>
+          </div>
+          <p class="stay__guests"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.6 0 4.4 1.4 5 4"/></svg>2 guests · up to 3</p>
+          <p class="stay__desc">A clear-panel geodesic dome at the very edge of the ridge. Draw the curtains for privacy, or leave them open and fall asleep under the Milky Way.</p>
+          <ul class="stay__inc">
+            <li>King bed facing the open sky</li>
+            <li>Star chart and red-light headlamps</li>
+            <li>Heated blanket for cold nights</li>
+            <li>Priority slot for the sunrise breakfast</li>
+          </ul>
+          <button class="btn btn--line stay__btn" type="button" data-pick="dome">Estimate this stay</button>
+        </div>
+      </article>
+    </div>
+    <p class="stays__note reveal">Extra guest beyond the included count: ₱900 per night, including a foam bed and linens.</p>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCES ============ -->
+<section class="exps" id="experiences" aria-labelledby="expTitle">
+  <div class="wrap exps__head">
+    <p class="eyebrow reveal"><span class="eyebrow__line"></span>Experiences</p>
+    <h2 class="section__title reveal" id="expTitle">From the <em>first spark</em> to the first light.</h2>
+  </div>
+
+  <article class="exp">
+    <img class="exp__bg" src="assets/img/exp-bonfire.jpg" alt="A stone fire pit with log benches, blankets and marshmallows under string lights and the Milky Way" loading="lazy" decoding="async" width="1200" height="675">
+    <div class="exp__panel glass reveal">
+      <p class="exp__time">7:30 PM onwards</p>
+      <h3 class="exp__name">Bonfire <em>Night</em></h3>
+      <p>We light the stone pit, set out wool blankets and a tray for marshmallows. Bring a playlist, or listen to the pines.</p>
+      <p class="exp__price"><strong>₱1,200</strong> per night · firewood, s'mores kit, blankets</p>
+    </div>
+  </article>
+
+  <article class="exp exp--right">
+    <img class="exp__bg" src="assets/img/exp-breakfast.jpg" alt="A Filipino breakfast of garlic rice, longganisa, fried eggs and mango with coffee, on a deck above a sea of clouds at sunrise" loading="lazy" decoding="async" width="1200" height="675">
+    <div class="exp__panel glass reveal">
+      <p class="exp__time">5:30 – 8:00 AM</p>
+      <h3 class="exp__name">Sunrise <em>Breakfast</em></h3>
+      <p>Garlic rice, highland longganisa, eggs, sweet mango and a pot of native barako coffee, served on your deck as the clouds turn gold.</p>
+      <p class="exp__price"><strong>₱450</strong> per guest, per morning</p>
+    </div>
+  </article>
+
+  <article class="exp">
+    <img class="exp__bg" src="assets/img/exp-hike.jpg" alt="A narrow trail along a grassy mountain ridge with wildflowers, above a sea of clouds at sunrise" loading="lazy" decoding="async" width="1200" height="675">
+    <div class="exp__panel glass reveal">
+      <p class="exp__time">4:45 AM start · about 2 hrs</p>
+      <h3 class="exp__name">Ridge <em>Hike</em></h3>
+      <p>A local guide leads you up the pine trail to the summit marker, timed for sunrise over the cloud line. Easy to moderate, no experience needed.</p>
+      <p class="exp__price"><strong>₱650</strong> per guest · guide, headlamp, trail snack</p>
+    </div>
+  </article>
+</section>
+
+<!-- ============ ESTIMATOR ============ -->
+<section class="estimate section starfield" id="estimate" aria-labelledby="estTitle">
+  <canvas class="stars" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <header class="section__head section__head--center">
+      <p class="eyebrow reveal"><span class="eyebrow__line"></span>Stay estimator<span class="eyebrow__line"></span></p>
+      <h2 class="section__title reveal" id="estTitle">Plan it, <em>price it</em>, then send it to us.</h2>
+      <p class="section__lede reveal">Live estimate in Philippine pesos. Final rates are confirmed when we reply to your inquiry.</p>
+    </header>
+
+    <form class="est glass reveal" id="estForm" novalidate>
+      <div class="est__inputs">
+        <fieldset class="est__group">
+          <legend>1 · Choose your stay</legend>
+          <div class="est__stays">
+            <label class="pick"><input type="radio" name="stay" value="belltent" checked><span class="pick__box"><span class="pick__name">Bell Tent</span><span class="pick__rate">₱4,800 / night</span></span></label>
+            <label class="pick"><input type="radio" name="stay" value="aframe"><span class="pick__box"><span class="pick__name">A-Frame Cabin</span><span class="pick__rate">₱7,500 / night</span></span></label>
+            <label class="pick"><input type="radio" name="stay" value="dome"><span class="pick__box"><span class="pick__name">Stargazing Dome</span><span class="pick__rate">₱9,200 / night</span></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="est__group">
+          <legend>2 · Dates and guests</legend>
+          <div class="est__row">
+            <label class="field"><span>Check-in</span><input type="date" id="estIn" required></label>
+            <label class="field"><span>Check-out</span><input type="date" id="estOut" required></label>
+            <div class="field">
+              <span id="guestsLbl">Guests</span>
+              <div class="stepper" role="group" aria-labelledby="guestsLbl">
+                <button type="button" class="stepper__btn" data-step="-1" aria-label="Fewer guests">−</button>
+                <output id="estGuests" aria-live="polite">2</output>
+                <button type="button" class="stepper__btn" data-step="1" aria-label="More guests">+</button>
+              </div>
+            </div>
+          </div>
+          <p class="est__hint" id="guestHint">Bell Tent includes 2 guests · maximum 3</p>
+        </fieldset>
+
+        <fieldset class="est__group">
+          <legend>3 · Add-ons</legend>
+          <div class="est__addons">
+            <label class="addon"><input type="checkbox" name="addon" value="bonfire"><span class="addon__box"><span class="addon__name">Bonfire kit</span><span class="addon__rate">₱1,200 / night</span></span></label>
+            <label class="addon"><input type="checkbox" name="addon" value="breakfast"><span class="addon__box"><span class="addon__name">Sunrise breakfast</span><span class="addon__rate">₱450 / guest / morning</span></span></label>
+            <label class="addon"><input type="checkbox" name="addon" value="hike"><span class="addon__box"><span class="addon__name">Guided ridge hike</span><span class="addon__rate">₱650 / guest</span></span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <aside class="est__summary" aria-live="polite">
+        <p class="est__sumHead">Your estimate</p>
+        <p class="est__sumStay" id="sumStay">Bell Tent · 2 nights · 2 guests</p>
+        <ul class="est__lines" id="sumLines"></ul>
+        <p class="est__error" id="estError" role="alert" hidden></p>
+        <div class="est__total">
+          <span>Estimated total</span>
+          <strong id="sumTotal">₱0</strong>
+        </div>
+        <p class="est__fine">VAT included. No payment is collected online.</p>
+        <button class="btn btn--block" type="button" id="bookThis">Book this stay</button>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="book section" id="book" aria-labelledby="bookTitle">
+  <div class="wrap book__inner">
+    <div class="book__intro">
+      <p class="eyebrow reveal"><span class="eyebrow__line"></span>Booking inquiry</p>
+      <h2 class="section__title reveal" id="bookTitle">Tell us when you're <em>coming up.</em></h2>
+      <p class="section__lede reveal">We reply within the day with availability and a payment link. Nothing is charged until you confirm.</p>
+      <ul class="book__points reveal">
+        <li>Check-in 2:00 PM · Check-out 11:00 AM</li>
+        <li>50% deposit secures the dates</li>
+        <li>Free rebooking up to 7 days before arrival</li>
+      </ul>
+    </div>
+
+    <form class="bform glass reveal" id="bookForm" novalidate>
+      <p class="bform__banner" id="prefillNote" hidden>Filled in from your estimate. Check the details below, then add your contact info.</p>
+      <div class="bform__grid">
+        <label class="field field--full"><span>Full name</span><input type="text" name="name" id="fName" autocomplete="name" required></label>
+        <label class="field"><span>Mobile number</span><input type="tel" name="mobile" id="fMobile" autocomplete="tel" placeholder="0917 123 4567" inputmode="tel" pattern="(\+63|0)9\d{2}( |-)?\d{3}( |-)?\d{4}" title="Philippine mobile number, e.g. 0917 123 4567 or +63 917 123 4567" required></label>
+        <label class="field"><span>Email</span><input type="email" name="email" id="fEmail" autocomplete="email" placeholder="you@example.com" required></label>
+        <label class="field field--full"><span>Stay</span>
+          <select name="stay" id="fStay" required>
+            <option value="belltent">Bell Tent (₱4,800 / night)</option>
+            <option value="aframe">A-Frame Cabin (₱7,500 / night)</option>
+            <option value="dome">Stargazing Dome (₱9,200 / night)</option>
+          </select>
+        </label>
+        <label class="field"><span>Check-in</span><input type="date" name="checkin" id="fIn" required></label>
+        <label class="field"><span>Check-out</span><input type="date" name="checkout" id="fOut" required></label>
+        <label class="field"><span>Guests</span><input type="number" name="guests" id="fGuests" min="1" max="5" value="2" required></label>
+        <label class="field field--full"><span>Notes <em class="opt">(optional)</em></span><textarea name="notes" id="fNotes" rows="7" placeholder="Add-ons, arrival time, dietary needs, special occasions…"></textarea></label>
+      </div>
+      <button class="btn btn--block" type="submit">Send inquiry</button>
+      <div class="bform__done" id="formDone" role="status" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.2 7.3 7.3 2.2-7.3 2.2L12 20.5l-2.2-7.3L2.5 11l7.3-2.2z"/></svg>
+        <div><strong>Portfolio demo — this form is not connected.</strong><span>Nothing was sent. In a live build, this inquiry would go to the resort's inbox or booking system.</span></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews section starfield" id="reviews" aria-labelledby="revTitle">
+  <canvas class="stars" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <header class="section__head section__head--center">
+      <p class="sample-badge reveal">Sample reviews · illustrative content, not real guests</p>
+      <h2 class="section__title reveal" id="revTitle">Notes left by <em>the fire.</em></h2>
+    </header>
+    <div class="reviews__grid">
+      <figure class="review glass reveal">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"We kept the dome curtains open all night. Woke up at 3 AM and the Milky Way was right there. The heated blanket saved us."</blockquote>
+        <figcaption><span>Sample guest · couple</span><span>Stargazing Dome</span></figcaption>
+      </figure>
+      <figure class="review glass reveal">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"The kids still talk about the s'mores. The A-Frame was warm and spotless, and the parking right beside it made unloading easy."</blockquote>
+        <figcaption><span>Sample guest · family of four</span><span>A-Frame Cabin</span></figcaption>
+      </figure>
+      <figure class="review glass reveal">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"The 4:45 hike was hard to get up for and completely worth it. Coffee was waiting at the tent when we came back down."</blockquote>
+        <figcaption><span>Sample guest · friends trip</span><span>Bell Tent</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq section" id="faq" aria-labelledby="faqTitle">
+  <div class="wrap faq__inner">
+    <header class="section__head">
+      <p class="eyebrow reveal"><span class="eyebrow__line"></span>Good to know</p>
+      <h2 class="section__title reveal" id="faqTitle">Before you <em>pack.</em></h2>
+      <p class="section__lede reveal">Still have a question? Add it to the notes on your inquiry and we'll answer it in our reply.</p>
+    </header>
+    <div class="faq__list">
+      <div class="qa reveal">
+        <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa1">What should I bring?<span class="qa__icon" aria-hidden="true"></span></button></h3>
+        <div class="qa__a" id="qa1" role="region"><div><p>A warm jacket, a beanie and socks for the night, a light rain layer, comfortable shoes with grip for the trail, and your own toiletries. We provide linens, towels, blankets, lanterns and drinking water. Pack light: the walk from the parking area to the tents is about 3 minutes on a stone path.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa2">What's the weather like?<span class="qa__icon" aria-hidden="true"></span></button></h3>
+        <div class="qa__a" id="qa2" role="region"><div><p>Days are mild at around 18–22°C, and nights drop to 12–16°C, colder from December to February. The clearest skies run from November to April. From June to October expect afternoon rain and thick fog. Fog is beautiful, but stargazing isn't guaranteed. If a typhoon signal is raised for the area, we rebook you for free.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa3">Is there parking?<span class="qa__icon" aria-hidden="true"></span></button></h3>
+        <div class="qa__a" id="qa3" role="region"><div><p>Yes. There's free gated parking for one vehicle per booking, and the A-Frame Cabin has its own slot. The last 2 km is a steep concrete road, so sedans are fine in dry weather, and we recommend an SUV or pickup in the rainy season. Motorcycles are welcome.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa4">Are pets allowed?<span class="qa__icon" aria-hidden="true"></span></button></h3>
+        <div class="qa__a" id="qa4" role="region"><div><p>Well-behaved dogs are welcome in the A-Frame Cabin (₱500 cleaning fee per stay, up to 2 dogs). To protect the canvas and the dome panels, pets aren't allowed in the Bell Tents or the Stargazing Dome. Please keep dogs leashed on the ridge trail.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <h3><button type="button" class="qa__q" aria-expanded="false" aria-controls="qa5">Is there signal and electricity?<span class="qa__icon" aria-hidden="true"></span></button></h3>
+        <div class="qa__a" id="qa5" role="region"><div><p>Every stay has solar-backed power outlets for charging. Mobile signal is patchy on the ridge, and Wi-Fi is available at the lodge. Most guests treat it as a chance to switch off.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="location section" id="location" aria-labelledby="locTitle">
+  <div class="wrap location__inner">
+    <div class="location__text">
+      <p class="eyebrow reveal"><span class="eyebrow__line"></span>Getting here</p>
+      <h2 class="section__title reveal" id="locTitle">Up the ridge, <em>past the last light.</em></h2>
+      <p class="section__lede reveal">Sitio Tala Ridge, in the Cordillera highlands of Northern Luzon. A fictional address for this sample site.</p>
+      <ol class="route reveal">
+        <li><span class="route__t">Manila → Baguio</span><span class="route__d">about 4–5 hrs via TPLEX</span></li>
+        <li><span class="route__t">Baguio → Tala Ridge turn-off</span><span class="route__d">about 1 hr 30 min of mountain road</span></li>
+        <li><span class="route__t">Turn-off → TALA gate</span><span class="route__d">2 km on steep concrete, 10 min</span></li>
+      </ol>
+      <p class="location__note reveal">No car? We can arrange a pickup from Baguio for ₱2,500 each way, for up to 4 guests.</p>
+    </div>
+    <figure class="map glass reveal" aria-label="Illustrated map of the route to TALA">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapT">
+        <title id="mapT">Illustrated route from Baguio up the mountain road to TALA on the ridge</title>
+        <g class="map__contours" fill="none" stroke-width="1">
+          <path d="M-10 230 C 60 200, 120 240, 190 210 S 330 170, 410 200"/>
+          <path d="M-10 200 C 70 170, 130 200, 200 175 S 320 130, 410 160"/>
+          <path d="M-10 165 C 80 140, 150 160, 210 140 S 310 90, 410 115"/>
+          <path d="M40 130 C 110 110, 170 120, 225 100 S 300 60, 380 70"/>
+          <path d="M110 95 C 160 80, 210 85, 245 65 S 300 35, 340 40"/>
+        </g>
+        <path class="map__road" d="M50 260 C 110 250, 120 210, 170 205 S 230 190, 225 160 S 250 110, 290 92" fill="none" stroke-width="2.5" stroke-dasharray="6 6"/>
+        <circle class="map__dot" cx="50" cy="260" r="5"/>
+        <text class="map__label" x="62" y="266">Baguio</text>
+        <circle class="map__dot" cx="170" cy="205" r="4"/>
+        <text class="map__label map__label--sm" x="128" y="228">Ridge turn-off</text>
+        <g transform="translate(290 92)">
+          <circle class="map__glow" r="18"/>
+          <path class="map__star" d="M0 -11 L2.6 -2.6 L11 0 L2.6 2.6 L0 11 L-2.6 2.6 L-11 0 L-2.6 -2.6Z"/>
+        </g>
+        <text class="map__label map__label--big" x="306" y="86">TALA</text>
+        <text class="map__label map__label--sm" x="306" y="102">1,600 m</text>
+        <text class="map__label map__label--sm" x="20" y="30">N ↑</text>
+      </svg>
+      <figcaption>Illustrative map, not to scale</figcaption>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer starfield">
+  <canvas class="stars" aria-hidden="true"></canvas>
+  <div class="wrap footer__inner">
+    <p class="footer__big">See you <em>under the stars.</em></p>
+    <div class="footer__row">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <svg class="brand__star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.2 7.3 7.3 2.2-7.3 2.2L12 20.5l-2.2-7.3L2.5 11l7.3-2.2z"/></svg>
+        <span class="brand__word">TALA</span>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#stays">Stays</a><a href="#experiences">Experiences</a><a href="#estimate">Estimate</a><a href="#book">Book</a><a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <p class="footer__credit">Fictional brand — portfolio sample by Khael Mendoza</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
